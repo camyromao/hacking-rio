@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="build/web.css">
+    </head>
+    <body>
+        <div class="flex-container-test">
+            <div class="logo-test">
+                <img src="logo.png">
+            </div>
+            <div>
+                <div class="cadastro-test">
+                    <div class="campo">
+                        <label> Nome: </label>
+                        <input type="text" name="nome"/>
+                    </div>
+                    <div class="campo">
+                        <label> Telefone: </label>
+                        <input type="number" name="telefone"/>
+                    </div>
+                    <input type="button" value="Cadastrar" onclick="cadastrar();"/>
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+        body {
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+    </style>
+    <script>
+        function cadastrar() {
+            window.open('inicio.html', '_self');
+        };
+    </script>
+</html>

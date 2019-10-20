@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  background-color: #eaeaea; }
+
+.header {
+  height: 50px;
+  text-align: -webkit-center;
+  background-color: #E95B0A; }
+
+.flex-container-test {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  margin: auto;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  position: relative; }
+  .flex-container-test p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333; }
+
+.proposta-test {
+  flex: 1;
+  display: block;
+  max-width: 50%;
+  margin-left: 350px;
+  margin-bottom: 100px;
+  margin-top: 80px; }
+  .proposta-test button {
+    cursor: pointer;
+    align-content: center;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #E95B0A; }
+    .proposta-test button:hover {
+      opacity: 0.8; }
+    .proposta-test button:active {
+      box-shadow: inset 0 1px 100px 0 rgba(0, 0, 0, 0.5);
+      background-color: #db8e46; }
+    .proposta-test button:focus {
+      outline: 0; }
+  .proposta-test span {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: normal; }
+
+.formulario {
+  font-size: 16px;
+  min-width: 200px;
+  margin: 50px auto; }
+  .formulario label {
+    font-size: 16px; }
+  .formulario input[type=text], .formulario input[type=number] {
+    flex: 1;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #7e7e7e; }
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto; }
+
+.corrigir input[type=button] {
+  flex: 1;
+  width: 200px;
+  height: 50px;
+  background-color: #E95B0A;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 10px; }
+
+.confirmar input[type=button] {
+  flex: 1;
+  width: 200px;
+  height: 50px;
+  background-color: #5271ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 10px; }
+
+.campo {
+  width: 100%;
+  margin-bottom: 10px; }
+
+.logo-test {
+  flex: 1;
+  width: 200px;
+  height: 200px;
+  margin-left: 30%;
+  margin-top: 180px; }
+
+.login-test {
+  flex: 1;
+  display: block;
+  max-width: 50%;
+  margin-left: 350px;
+  margin-top: 150px; }
+  .login-test input[type=number] {
+    width: 40%;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333333; }
+  .login-test input[type=button] {
+    width: 20%;
+    height: 50px;
+    background-color: #E95B0A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal; }
+
+.checkbox-opt-test {
+  position: absolute;
+  margin-top: 10px; }
+
+.cadastro-link-test {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 150px;
+  border-left: 1px solid #aaa9a9;
+  padding-left: 35px; }
+
+.cadastro-test {
+  position: absolute;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 350px; }
+  .cadastro-test label {
+    display: inline-block;
+    text-align: left;
+    widows: 140px; }
+  .cadastro-test input[type=text], .cadastro-test input[type=number] {
+    flex: 1;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333333; }
+  .cadastro-test input[type=button] {
+    width: 100%;
+    height: 50px;
+    background-color: #E95B0A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal; }
+
+.proposta button {
+  cursor: pointer;
+  align-content: center;
+  margin-top: 32px;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #E95B0A; }
+  .proposta button:hover {
+    opacity: 0.8; }
+  .proposta button:active {
+    box-shadow: inset 0 1px 100px 0 rgba(0, 0, 0, 0.5);
+    background-color: #db8e46; }
+  .proposta button:focus {
+    outline: 0; }
+.proposta span {
+  width: 81px;
+  height: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffff; }
+
+.microfone-test {
+  width: 15%;
+  height: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px; }
+
+.gravacao {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 20px auto; }
+
+.rec, .pause {
+  flex: 1;
+  width: 65px;
+  height: 65px;
+  margin: 0 20px;
+  padding-top: 3px; }
+
+.stop {
+  flex: 1;
+  width: 70px;
+  height: 70px;
+  margin: 0 20px; }
+
+.timer {
+  display: block;
+  width: 25%;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto; }
+  .timer p {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.botao-salvar {
+  margin-top: 20px; }
+  .botao-salvar button {
+    cursor: pointer;
+    align-content: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 25%;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #ffffff; }
+    .botao-salvar button:hover {
+      opacity: 0.7; }
+    .botao-salvar button:active {
+      box-shadow: inset 0 1px 100px 0 rgba(0, 0, 0, 0.5);
+      background-color: #db8e46; }
+    .botao-salvar button:focus {
+      outline: 0; }
+  .botao-salvar span {
+    width: 81px;
+    height: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    line-height: 1;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: #333333; }
+
+.tabela {
+  flex: 1;
+  display: block;
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto; }
+  .tabela table {
+    min-width: 500px;
+    margin: auto; }
+  .tabela td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: #ffffff; }
+
+.voltar {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  align-content: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  width: 25%;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #E95B0A; }
+  .voltar:hover {
+    opacity: 0.7; }
+  .voltar:active {
+    box-shadow: inset 0 1px 100px 0 rgba(0, 0, 0, 0.5);
+    background-color: #db8e46; }
+  .voltar:focus {
+    outline: 0; }
+
+/*# sourceMappingURL=web.css.map */

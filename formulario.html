@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="build/web.css">
+    </head>
+    <body>
+        <div class="flex-container-test">
+            <div class="formulario">
+                    <div class="campo">
+                        <label>Nome: </label>
+                        <input type="text" name="nome" value="Roberto">
+                    </div>
+                    <div class="campo">
+                        <label>Idade: </label>
+                        <input type="number" name="idade" value="30">
+                    </div>
+                    <div class="campo">
+                        <label>Renda vitalícia: </label>
+                        <input type="text" name="renda" value="R$ 3.000">
+                    </div>
+                    <div class="campo">
+                        <label>Tempo para se aposentar: </label>
+                        <input type="text" name="tempo" value="35">
+                    </div>
+                    <div class="campo">
+                        <label>Imposto: </label>
+                        <input type="text" name="imposto" value="Simplificado">
+                    </div>
+                </div>
+                <div class="botoes">
+                    <div class="corrigir">
+                        <input type="button" value="Corrigir" onclick="corrigir();">
+                    </div>
+                    <div class="confirmar">
+                        <input type="button" value="Confirmar" onclick="abrirProposta();">
+                    </div>
+                </div>
+        </div>
+
+    </body>
+    <script>
+        function abrirProposta() {
+            window.open('proposta1.html', '_self');
+        }
+
+        function corrigir() {
+            window.alert('Alterações salvas!');
+        }
+    </script>
+</html>

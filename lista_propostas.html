@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="build/web.css">
+    </head>
+    <body>
+        <div class="flex-container-test">
+            <div class="tabela">
+                <p>Propostas</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><a href="javascript:verProposta(1);">Proposta 1</a></td>
+                            <td>Roberto Alves</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:verProposta(2);">Proposta 2</a></td>
+                            <td>Gabriela Torres</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:verProposta(3);">Proposta 3</a></td>
+                            <td>Roberto Alves</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:verProposta(4);">Proposta 4</a></td>
+                            <td>Gabriela Torres</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:verProposta(5);">Proposta 5</a></td>
+                            <td>Roberto Alves</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:verProposta(6);">Proposta 6</a></td>
+                            <td>Gabriela Torres</td>
+                        </tr>
+                        <tr>
+                            <td><a href="javascript:verProposta(7);">Proposta 7</a></td>
+                            <td>Roberto Alves</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="voltar" onclick="inicio()">Voltar</button> 
+            </div>
+        </div>
+
+    </body>
+    <script>
+        function verProposta(n) {
+            let file = 'proposta' + n + '.html';
+            if (n === 1) {
+                window.open(file, '_self');
+            }
+        }
+
+        function inicio() {
+            window.open('inicio.html', '_self');
+        }
+
+    </script>
+</html>

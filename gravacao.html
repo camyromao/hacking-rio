@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="build/web.css">
+    </head>
+    <body>
+        <div class="flex-container-test">
+            <p>Gravação</p>
+            <input type="image" src="mic.png" class="microfone-test"/>
+            <div class="timer">
+                <p id="time">
+                    00:00:00
+                </p>
+            </div>
+            <div class="gravacao">
+                <input type="image" src="rec.png" class="rec" onclick="toggle(this);"/>
+                <input type="image" src="stop.png" class="stop" onclick="salvar();"/>
+            </div>
+            <div class="botao-salvar">
+                <button onclick="continuar();"><span>Continuar</span></button>
+            </div>
+
+
+        </div>
+
+    </body>
+    <script>
+        let hours = 0;
+        let minutes = 0;
+        let seconds = 0;
+        let time = timeToString();
+        let running = false;
+
+        function timeToString() {
+            let zh = "";
+            let zm = "";
+            let zs = "";
+
+            if (hours < 10) {
+                zh = '0';
+            }
+            
+            if (minutes < 10) {
+                zm = '0';
+            }
+            
+            if (seconds < 10) {
+                zs = '0';
+            }
+            return zh + hours + ':' + zm + minutes + ':' + zs + seconds;
+
+        }
+
+
+        window.onload = function () {
+            let running = false;
+            document.getElementById("time").innerHTML = time;
+            
+            document.getElementsByClassName("rec").item(0).addEventListener('click', function () {
+                if (running === false) {
+                    interval = setInterval( function () {
+                        seconds += 1;
+                        if (seconds > 59) {
+                            seconds = 0;
+                            minutes += 1;
+                        }
+                        
+                        if (minutes > 59) {
+                            minutes = 0;
+                            hours += 1;
+                        }
+
+                        document.getElementById("time").innerHTML = timeToString();
+                    }, 1000);
+                    running = true;
+                } else {
+                    running = false;
+                    clearInterval(interval);
+                }
+
+            })
+
+        }
+
+        function toggle(el){
+            if(el.className!="pause")
+            {
+                el.src='pause.png';
+                el.className="pause";
+            }
+            else if(el.className=="pause")
+            {
+                el.src='rec.png';
+                el.className="rec";
+            }
+        
+            return false;
+        }
+
+        function salvar() {
+            let salvo = window.confirm('Salvar áudio?');
+            if (salvo === true) {
+                hours = 0;
+                minutes = 0;
+                seconds = 0;
+                document.getElementById('time').innerHTML = "00:00:00";
+                console.log(running);
+
+            }
+        } 
+
+        function continuar () {
+            window.open('formulario.html', '_self');
+        }
+
+
+
+    </script>
+</html>
